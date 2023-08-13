@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+/* ... Reset CSS ... */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Margin and padding reset */
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* List reset */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Typography reset */
+  html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Other reset */
+  a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  button, input {
+    overflow: visible;
+  }
+  
+  button, select {
+    text-transform: none;
+  }
+  
+
+  
+html {
+  background-color: #CABAC8;
+}
+
+header {
+  background-color: #4CB5AE;
+  height: 100px;
+  display: flex;
+  align-items: center; 
+  padding: 0 20px; 
+}
+
+.logo {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px; 
+  color: white; 
+}
+
+.formulario {
+  max-width: 600px; 
+  margin: 0 auto; 
+  margin-top: 130px; 
+  padding: 30px;
+  background-color: #81D6E3;
+  box-shadow: 0px 20px 40px;
+  font-size: 20px;
+  text-align: center;
+
+}
+    
+footer{
+    height: 50px;
+    margin-top: 250px;
+    background-color: #5A7D7C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

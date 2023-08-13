@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Acesso</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="smartphone.css">
+  <style>
+
+    #access-result {
+      font-family: 'Josefin Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Controle de Acesso</h1>
+    </header>
+    
+  <section class="formulario">
+  <label for="card-number">Número do Cartão:</label>
+  <input type="number" id="card-number">
+  <button id="check-access">Verificar Acesso</button>
+  <p id="access-result">Aguardando verificação...</p>
+
+
+  <script>
+    
+    const checkAccessButton = document.getElementById("check-access");
+    const cardNumberInput = document.getElementById("card-number");
+    const accessResult = document.getElementById("access-result");
+
+    checkAccessButton.addEventListener("click", () => {
+  const cardNumber = parseInt(cardNumberInput.value);
+
+  if (cardNumber > 2999) {
+    accessResult.textContent = "Acesso Negado";
+    accessResult.style.color = "red";
+  } else if (cardNumber >= 1000 && cardNumber <= 1999) {
+    accessResult.textContent = "Acesso Total Permitido";
+    accessResult.style.color = "green";
+  } else if (cardNumber >= 2000 && cardNumber <= 2999) {
+    accessResult.textContent = "Acesso Limitado Permitido";
+    accessResult.style.color = "orange";
+  } else {
+    accessResult.textContent = "Número de Cartão Inválido";
+    accessResult.style.color = "gray";
+  }
+});
+</script>
+  </section>
+  <footer>
+    <span>Lorem ipsum dolor sit amet, consectetur </span>
+  </footer>
+</body>
+</html>
